@@ -37,8 +37,12 @@ public class Main {
             } else if (islem == 4) {
                 if (sayi2==0){
                     System.out.println("Bir sayı sıfıra bölünemez!");
-                } else if (sayi2>sayi1); {
-                    System.out.println("2.sayı, 1.sayıdan büyük olduğu için bölünemez");
+                }  else if (sayi1==0) {
+                    System.out.println("0");
+                }   else if (sayi2 > sayi1) {
+                    System.out.println("2.sayı, 1.sayıdan büyük olduğu için bölünemez.");
+                } else {
+                    System.out.println(sayi1 / sayi2);
                 }
             } else {
                 System.out.println("Yanlış işlem girdiniz!!");
