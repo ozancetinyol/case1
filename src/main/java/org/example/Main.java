@@ -28,13 +28,17 @@ public class Main {
         System.out.println("Hangi işlemi yapmak istiyorsunuz?: No:1 = Toplama , No:2 = Çıkartma, No:3 = Çarpma, No:4 = Bölme " + "----- Lütfen yapmak istediğiniz işlem için bir no giriniz: Örneğin: 3");
         islem = scanner.nextInt();
 
-            if (islem==1){
-                System.out.println(sayi1+sayi2);
-            } else if(islem ==2){
-                System.out.println(sayi1-sayi2);
-            } else if (islem == 3) {
-                System.out.println(sayi1*sayi2);
-            } else if (islem == 4) {
+        switch (islem) {
+            case 1:
+                System.out.println(sayi1 + sayi2);
+                break;
+            case 2:
+                System.out.println(sayi1 - sayi2);
+                break;
+            case 3:
+                System.out.println(sayi1 * sayi2);
+                break;
+            case 4:
                 if (sayi2==0){
                     System.out.println("Bir sayı sıfıra bölünemez!");
                 }  else if (sayi1==0) {
@@ -44,8 +48,10 @@ public class Main {
                 } else {
                     System.out.println(sayi1 / sayi2);
                 }
-            } else {
-                System.out.println("Yanlış işlem girdiniz!!");
-            }
+                break;
+            default:
+                System.out.println("Yanlış işlem girdiniz!");
+
+        }
     }
     }
