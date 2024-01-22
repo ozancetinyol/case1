@@ -31,6 +31,7 @@ public class Calculator {
                     calculation.division(a, b);
                     break;
 
+                default:System.out.println("Lütfen geçerli bir işlem giriniz!");
             }
         } else {
             System.out.println("Lütfen geçerli bir işlem giriniz!");
